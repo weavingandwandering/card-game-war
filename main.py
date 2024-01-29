@@ -5,21 +5,6 @@ from random import shuffle
 import sys
 
 
-new_deck = Deck()
-print(new_deck.add_cards[0])
-
-new_deck.shuffle_deck()
-print(new_deck.add_cards[0])
-
-new_player = Player("Ishita")
-print(new_player)
-
-sample_card = new_deck.deal_card()
-new_player.add_card(sample_card)
-
-print(new_player)
-
-
 
 def game_start():
     
@@ -58,6 +43,7 @@ def game_start():
 
             if len(player_two.current_cards) == 0:
                 print("Game Won by Player 1!")
+                game_on = False
                 sys.exit()
 
 
@@ -68,6 +54,7 @@ def game_start():
 
             if len(player_one.current_cards) == 0:
                 print("Game Won by Player 2!")
+                game_on = False
                 sys.exit()
 
         else:
