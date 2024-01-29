@@ -80,16 +80,5 @@ def game_start():
                 else:
                     pass
 
-
-
-
-
-
-
-
-
-
-
-
 game_start()
 
