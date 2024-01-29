@@ -20,8 +20,13 @@ class Player:
         """
         adds the new card(s) to the end of the player's deck 
         """
-        if type(new_card) == type(list):
+        if type(new_card) == type([]):
             self.current_cards.extend(new_card)
         else:
             self.current_cards.append(new_card)
         
+
+    def war_card(self,curr_war):
+        curr_war.extend(self.current_cards[0:3])
+        self.current_cards = self.current_cards[3:]
+        return curr_war

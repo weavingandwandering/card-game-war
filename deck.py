@@ -27,3 +27,5 @@ class Deck:
     def deal_card(self):
         
         return self.add_cards.pop()
+    
+    
